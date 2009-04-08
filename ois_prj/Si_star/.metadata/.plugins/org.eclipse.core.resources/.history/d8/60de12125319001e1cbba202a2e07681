@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:tr="http://www.troposproject.org">
-  <tr:Diagram xmi:id="_D_WjsBlTEd6sp9WXpz5oPg"/>
-  <notation:Diagram xmi:id="_EAGKkBlTEd6sp9WXpz5oPg" type="Tropos" element="_D_WjsBlTEd6sp9WXpz5oPg" name="default.tpd" measurementUnit="Pixel">
-    <styles xmi:type="notation:PageStyle" xmi:id="_EAGKkRlTEd6sp9WXpz5oPg"/>
-    <styles xmi:type="notation:GuideStyle" xmi:id="_EAGKkhlTEd6sp9WXpz5oPg"/>
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_EAGKkxlTEd6sp9WXpz5oPg"/>
-  </notation:Diagram>
-</xmi:XMI>
