@@ -106,22 +106,50 @@ Total&&&&00:000:01:23:33&&5,966800
 \subsection{Security checking}
 The ``Security checking'' business process scope is to achieve the best protection through prevention against introuders, external penetration attempts, system's robustness and security, reliability with high load application and stability. To performing all the test, sometime is necessary to require a professional\footnote{In particular penetration test are aimed by AllSpark to certificate its quality.} that has experience in this kind of application and, over all, that is costantly up to date with respect to the always new method to trick the barriers.
 
-Since the test concern both implemented product and the acquired product, the main responsible of all the operation is located on the Project management role which sorround all the aspect of the Company's system. The testing functionalities are followed also by some element of ``Research & Development'' organizational unit represented in figure \ref{2img:working}.
+Since the test concern both implemented product and the acquired product, the main responsible of all the operation is located on the Project management role which sorround all the aspect of the Company's system. The testing functionalities are followed also by some elements of ``Research \& Development'' organizational unit, represented in figure \ref{2img:working}, in order to furnish detailed parameters and to acquire testing metodologies.
 
 \begin{figure}[ht!]
 \begin{centering}
-\includegraphics[scale=0.50]{assign2/adonis/imgs/updating.jpg}
-\caption{AllSpark Updating Management.}
-\label{2img:updating}
+\includegraphics[scale=0.50]{assign2/adonis/imgs/security.jpg}
+\caption{AllSpark Security checking.}
+\label{2img:security}
 \end{centering}
 \end{figure}
 
 
 \subsubsection{Path Analysis}
-
+A path leads with the 80,20\% of probability above the all others resulting by the path analysis. The timing is quite interesting since in about two hours is possible to indicate the characteristics of the Systems. This time excludes eventually a deep penetration test which requires day of work in order to acquire sensitive information to use against the AllSpark.
 
 \begin{alltt}
+Probability:   80,2000\%
+Execution time:  00:000:02:05:00
+Waiting time:  00:000:00:03:00
+Resting time:  00:000:00:00:00
+Transport time:  00:000:00:05:00
+Cycle time:  00:000:02:08:00
+Costs:  2,510000
 
+Security Checking 0.1 (Business process model)
+========================================
+Process start: Start
+Activity: Plannig test
+Decision: Does test need advanced skills? --> AdvancedSkills='No'
+Parallelity: Parallelity-21893
+    *
+    Activity: Logging test
+    *
+    Subprocess: Performing test
+Merging: Merging-21898
+Activity: Study the test results
+Decision: Is the test successful completed? --> TestSuccess='Yes'
+Activity: Update Company Security Log
+End: End
+
+Security Checking 0.1 (Business process model) --> Performing test 1 (Business process model)
+========================================
+Process start: Start
+Activity: Performing test
+End: End
 \end{alltt}
 
 
@@ -135,7 +163,41 @@ Since the test concern both implemented product and the acquired product, the ma
 \begin{tabular}{|l|l|l|l|l|l|l|}
 Business process&Activity&Performer&Number&Execution time&Cycle time&Costs\\
 \hline
-
+Security Checking 0.1&&&&00:000:02:14:24&00:000:03:24:49&8,014000\\
+\hline
+&Plannig test &&1,000000&00:000:00:20:00&&1,000000\\
+\hline
+&&Analyst &1,000000&00:000:00:20:00&&1,000000\\
+\hline
+&Require external consulting &&0,108000&00:000:00:01:05&&5,400000\\
+\hline
+&&Analyst &0,108000&00:000:00:01:05&&5,400000\\
+\hline
+&Logging test &&1,000000&00:000:00:05:00&&0,010000\\
+\hline
+&&Programmer &1,000000&00:000:00:05:00&&0,010000\\
+\hline
+&Study the test results &&1,000000&00:000:00:30:00&&0,500000\\
+\hline
+&&Analyst &1,000000&00:000:00:30:00&&0,500000\\
+\hline
+&Planning corrective actions &&0,104000&00:000:00:02:05&&0,052000\\
+\hline
+&&Analyst &0,104000&00:000:00:02:05&&0,052000\\
+\hline
+&Update Company Security Log &&1,000000&00:000:00:10:00&&0,000000\\
+\hline
+&&Programmer &1,000000&00:000:00:10:00&&0,000000\\
+\hline
+&Performing test &&1,000000&00:000:01:00:00&&1,000000\\
+\hline
+&&Area Manager &1,000000&00:000:01:00:00&&1,000000\\
+\hline
+&Performing test &&0,104000&00:000:00:06:14&&0,052000\\
+\hline
+&&Area Manager &0,104000&00:000:00:06:14&&0,052000\\
+\hline
+Total&&&&00:000:02:14:24&&8,014000
 \end{tabular}
 }
 \caption{Capacity analysis for Updating Management.}
