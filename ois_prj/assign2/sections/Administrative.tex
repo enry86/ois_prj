@@ -1,10 +1,10 @@
 \section{Administrative Area}
-The Administrative processes are performed by the gorup of employee grouped in the Admnistrative Organizational unit according to the Working Structure in figure \ref{2img:wstruct}. In particular all the processes are supervised by the CEO who is the leader of the organizational's trend.
+The Administrative Area is the AllSpark's section interested on the management of its lifecyle. All the purposes to achieve here contribute to the Company management, and the implicit work has the primary objective of mantaining the operativity. It's important to employees direct related to these functions bearing in mind the position of the Company with respect the relations with the specific business sector.
 
+The group of employee related in this Area are grouped in the ``Administrative'' organization nit according with the Working Structure in figure \ref{2img:working}. All processes are supervised by the Chief Executive Officer (CEO) who monitors the business process according with his conceptual ideas and his primary role of AllSpark's leader.
 
 \subsection{Billing}
-This process provides support for the definition of the appropriate
-remuneration for the service supplied.
+This process provides support for the definition of the appropriate remuneration for the service supplied.
 The process takes into account the history of project development and the details defined in the contract, in order to check if they match or if some extra features have been during the development phase. The employees mainly involved are Business Consultant, Secretary and the CEO.
 
 Image \ref{2img:billing} shows how this process is realized in practice, focusing on the resources used and the targets for each activity. The goal of this process is to provide a fair billing to the customer, balanced on the services actually delivered.\\
@@ -18,8 +18,7 @@ Image \ref{2img:billing} shows how this process is realized in practice, focusin
 \end{figure}
 
 
-\noindent
-\emph{Path Analysis}\\
+\subsubsection{Path Analysis}
 The analysis of possible paths results five correspondence, one with the 80,40\% of probability to be performed. For simulation's convention the number of these processes per month is configured on three element on average.
 
 \begin{alltt}
@@ -51,8 +50,8 @@ Activity: Send to Customer
 End: End
 \end{alltt}
 
-\noindent
-\emph{Capacity Analysis}\\
+
+\subsubsection{Capacity Analysis}
 The capacity analysis of the process illustrates the specified timing and costs forseen for the single activities. Morevover it exlicities the Performer associated to each activity in order to check the responsibility for each step of the Business Process.
 
 \begin{table}
@@ -111,8 +110,8 @@ The figure \ref{2img:bureaucracy} shows the graphical representation, focusing o
 \end{centering}
 \end{figure}
 
-\noindent
-\emph{Path Analysis}\\
+
+\subsubsection{Path Analysis}
 Ten paths were discovered by the analysis of the modelization; the first leads with the 84,70\% probability to be performed. 
 
 \begin{alltt}
@@ -165,14 +164,15 @@ Activity: Performing correction
 End: End
 \end{alltt}
 
-\noindent
-\emph{Capacity Analysis}\\
+
+\subsubsection{Capacity Analysis}
 In the capacity analysis of the process reported below, is possible to observe that the task is very wasting both in terms of time and in costs.
 
 It is important to underline that the Process is defined to be performed at least once a month.
 
 \begin{landscape}
 \centering
+\begin{table}
 {\tiny
 \begin{tabular}{|l|l|l|l|l|l|l|}
 Business process&Activity&Performer&Number&Execution time&Cycle time&Costs\\
@@ -218,7 +218,8 @@ Bureaucracy Management 0.2&&&&00:000:01:46:01&00:000:01:49:03&1919,760040\\
 Total&&&&00:000:01:46:01&&1919,760040
 \end{tabular}
 }
-%\caption{Capacity analysis for Bureaucracy Management.}
+\caption{Capacity analysis for Bureaucracy Management.}
+\end{table}
 \end{landscape}
 %
 
@@ -239,8 +240,8 @@ The figure \ref{2img:financial_sup} reports the representation of the discussion
 \end{centering}
 \end{figure}
 
-\noindent
-\emph{Path Analysis}\\
+
+\subsubsection{Path Analysis}
 The path analysis shows fifteen paths which three of them really important. The following table illustrate their characteristics.\\
 
 \begin{table}
@@ -259,7 +260,7 @@ Path&Probability&Execution time&Cycle time&Costs\\
 The favorite path is the first and it is presented as follows.\\
 
 \begin{alltt}
-Probability:   61,2000%
+Probability:   61,2000\%
 Execution time:  00:000:02:15:00
 Waiting time:  00:000:00:28:00
 Resting time:  00:000:00:18:00
@@ -293,12 +294,13 @@ Activity: Draw up report and notify results to CEO
 End: End
 \end{alltt}
 
-\noindent
-\emph{Capacity Analysis}\\
+
+\subsubsection{Capacity Analysis}
 The capacity analysis of the process figures as expectations that the business consultant is the primary role in the task and basically the business process is a sequential step of his work.
 
 \begin{landscape}
 \centering
+\begin{table}
 {\tiny
 \begin{tabular}{|l|l|l|l|l|l|l|}
 Business process&Activity&Performer&Number&Execution time&Cycle time&Costs\\
@@ -348,52 +350,255 @@ Financial support 0.2&&&&00:000:02:33:28&00:000:03:04:50&77,040900\\
 Total&&&&00:000:02:33:28&&77,040900
 \end{tabular}
 }
-%\caption{Capacity analysis for Financial support.}
+\caption{Capacity analysis for Financial support.}
+\end{table}
 \end{landscape}
 %
 
 %
 
 \subsection{Marketing Management}
-This process provides support for the definition of the appropriate
-remuneration for the service supplied.
-The process takes into account the history of project development and the details defined in the contract, in order to check if they match or if some extra features have been during the development phase. The employees mainly involved are Business Consultant, Secretary and the CEO.
+The Marketing Management business process has to promote the Company's product to the business. The campaign can be structured in several manners, with access to different media and having various targets. The primary scope of the process is to perform the best work using historical data and analyzing the results in order to improve future campaigns. Figure \ref{2img:mark_man} shows the process in its wide.
 
-Image \ref{2img:billing} shows how this process is realized in practice, focusing on the resources used and the targets for each activity. The goal of this process is to provide a fair billing to the customer, balanced on the services actually delivered.\\
+The interested performers are primary the business consultant and CEO who are supported by the secretary in the different facets of the job.
 
 \begin{figure}[ht!]
 \begin{centering}
-\includegraphics[scale=0.50, angle=90]{assign2/adonis/imgs/billing.jpg}
-\caption{AllSpark billing process.}
-\label{2img:billing}
+\includegraphics[scale=0.50, angle=90]{assign2/adonis/imgs/mark_man.jpg}
+\caption{AllSpark Marketing Management.}
+\label{2img:mark_man}
 \end{centering}
 \end{figure}
 
-\noindent
-\emph{Path Analysis}\\
-The analysis of possible paths results five correspondence, one with the 80,40\% of probability to be performed. For simulation's convention the number of these processes per month is configured on three element on average.
+
+\subsubsection{Path Analysis}
+The analysis of possible paths results thre correspondence with interesting probability, one of them with the 56,70\% of probability to be performed. The analysis returns that paths have very similar time and costs and so are not so significative in hte study of this process; this means that the Company has standardize the process to be more or less as expectations. The highest probability path is reported straight after the following table.
+
+\begin{table}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+Path&Probability&Execution time&Cycle time&Costs\\
+\hline
+1&0,5670&00:018:07:50:00&00:001:00:25:00&2207,80\\
+\hline
+2&0,2140&00:018:08:35:00&00:001:00:25:00&2208,10\\
+\hline
+3&0,1450&00:018:07:40:00&00:001:00:25:00&2207,05
+\end{tabular}
+\end{table}
+
+% \vspace
 
 \begin{alltt}
+Probability:   56,7000%
+Execution time:  00:018:07:50:00
+Waiting time:  00:001:00:25:00
+Resting time:  00:001:00:23:00
+Transport time:  00:000:03:28:00
+Cycle time:  00:021:01:46:00
+Costs:  2207,800000
 
+Marketing Management 0.1 (Business process model)
+========================================
+Process start: Start
+Activity: Market analysis
+Decision: Have we already realized similar one? --> AlreadyDone = 'Yes'
+Subprocess: Loading previouses works
+Activity: Campaign Proposal
+Activity: Starting Campaign
+Parallelity: Parallelity-28827
+    *
+    Subprocess: Gathering feedback
+    *
+    Subprocess: Analyze Campaign efficiency
+Merging: Merging-28833
+Activity: Elaborating data
+Decision: Have the target been reached? --> TargetReached = 'Yes'
+Activity: Store Campaign information
+End: End
+
+Marketing Management 0.1 (Business process model) --> Loading previouses works 1 (Business process model)
+========================================
+Process start: Start
+Activity: Loading Previouses works
+End: End
+
+Marketing Management 0.1 (Business process model) --> Gathering feedback 1 (Business process model)
+========================================
+Process start: Start
+Activity: Gathering feedback
+End: End
+
+Marketing Management 0.1 (Business process model) --> Analyze campaign efficiency 1 (Business process model)
+========================================
+Process start: Start
+Activity: Analyze campaign efficiency
+End: End
 \end{alltt}
 
-\noindent
-\emph{Capacity Analysis}\\
+
+\subsubsection{Capacity Analysis}
 The capacity analysis of the process illustrates the specified timing and costs forseen for the single activities. Morevover it exlicities the Performer associated to each activity in order to check the responsibility for each step of the Business Process.
 
 \begin{landscape}
 \centering
+\begin{table}
 {\tiny
 \begin{tabular}{|l|l|l|l|l|l|l|}
 Business process&Activity&Performer&Number&Execution time&Cycle time&Costs\\
 \hline
-
+Marketing Management 0.1&&&&00:018:08:00:59&00:021:01:56:46&2207,876650\\
+\hline
+&Market analysis &&1,000000&00:001:08:20:00&&200,000000\\
+\hline
+&&Business consultant &1,000000&00:001:08:20:00&&200,000000\\
+\hline
+&Campaign Proposal &&1,000000&00:000:08:00:00&&1000,000000\\
+\hline
+&&CEO &1,000000&00:000:08:00:00&&1000,000000\\
+\hline
+&Starting Campaign &&1,000000&00:015:00:00:00&&1000,000000\\
+\hline
+&&CEO &1,000000&00:015:00:00:00&&1000,000000\\
+\hline
+&Elaborating data &&1,000000&00:001:00:00:00&&7,000000\\
+\hline
+&&Secretary &1,000000&00:001:00:00:00&&7,000000\\
+\hline
+&Store Campaign information &&1,000000&00:000:00:30:00&&0,400000\\
+\hline
+&&Secretary &1,000000&00:000:00:30:00&&0,400000\\
+\hline
+&Loading Previouses works &&0,793000&00:000:00:07:56&&0,039650\\
+\hline
+&&Secretary &0,793000&00:000:00:07:56&&0,039650\\
+\hline
+&Gathering feedback &&1,000000&00:000:00:20:00&&0,050000\\
+\hline
+&&Area Manager &1,000000&00:000:00:20:00&&0,050000\\
+\hline
+&Analyze campaign efficiency &&1,000000&00:000:00:30:00&&0,300000\\
+\hline
+&&Area Manager &1,000000&00:000:00:30:00&&0,300000\\
+\hline
+&Analyze missing &&0,290000&00:000:00:13:03&&0,087000\\
+\hline
+&&Area Manager &0,290000&00:000:00:13:03&&0,087000\\
+\hline
+Total&&&&00:018:08:00:59&&2207,876650\\
 \end{tabular}
 }
-%\caption{Capacity analysis for Marketing management.}
+\caption{Capacity analysis for Marketing management.}
+\end{table}
 \end{landscape}
 %
 
 %
 
 \subsection{Public Relation Management}
+The Public Relation Management aims to standardize the way how Company undertakes relations with customers, or future ones, in order to improve its  basket of possible purchasers. Basically the Manager assigned to supervise the Company's public face organize the way, the method and the information that the Representative, or the Analyst in some rare case\footnote{The analyst is not responsible to public relation, but he can be required in the project's advanced stage to fit at best the customers' demands.}, who contacts direct the cutomer, is charged to divulgate. 
+
+The Representative has to relates with the customer in a pleasant way in order to facilitate future relationships. Image \ref{2img:mark_man} represent the process modeled.
+
+During the process may be requested the support of the Secretary and the authorizations of the CEO. Also important is the Business operator who should regulate the different necessity of the Representative.
+
+\begin{figure}[ht!]
+\begin{centering}
+\includegraphics[scale=0.50, angle=90]{assign2/adonis/imgs/pr_man.jpg}
+\caption{AllSpark Public Relation Management.}
+\label{2img:pr_man}
+\end{centering}
+\end{figure}
+
+
+\subsubsection{Path Analysis}
+The Public Relation Management path analysis results the expected value of a high probability in contacting the customer, that is 80,40\%. The following table illustrate a huge amount of time, expecially the waiting time, but is important to evidence that is a process strongly linked to human timing such as movement in the physical world, report compilation and meetings.
+
+The forseen costs indicate mainly the transfer expenses which are for the majority charged to the Company.
+
+Interesting is that the relation management may happen also in through Internet and so both costs and time are very huge, but is difficult to relate with another person through the Network unless explicity required. The main objective of the Company is to reach directly the customer in the nearest places, but connecting with mail, videoconference and telephone the farest ones who may require direct high level personnel for specified tasks.
+
+\begin{alltt}
+Probability:   81,4000%
+Execution time:  00:000:03:00:00
+Waiting time:  00:000:00:51:00
+Resting time:  00:000:00:14:00
+Transport time:  00:000:00:30:00
+Cycle time:  00:000:04:22:00
+Costs:  33,800000
+
+Public Relation Management 0.1 (Business process model)
+========================================
+Process start: Start
+Activity: Information to comunicate
+Parallelity: Parallelity-29253
+    *
+    Activity: Prepare the format - report
+    *
+    Activity: Plan the meet
+Merging: Merging-29256
+Activity: Build or group elements to comunicate
+Subprocess: Analyze client profile
+Decision: May be the customer interested on? --> CustomerInterest = 'Yes'
+Subprocess: Contact Customer
+End: End
+
+Public Relation Management 0.1 (Business process model) --> Analyze client profile 1 (Business process model)
+========================================
+Process start: Start
+Activity: Analyze client profile
+End: End
+
+Public Relation Management 0.1 (Business process model) --> Contact customer 1 (Business process model)
+========================================
+Process start: Start
+Activity: Contact customer
+End: End
+\end{alltt}
+
+
+\subsubsection{Capacity Analysis}
+The capacity analysis shows the time simulated with the model and the importance of that is give by the activies of which are very time spending. Apart the ``Contact customer'', the others may be overcharged since the execution time is really high. The explanation is that the center of the realation is another person and so a good comunication make easier each future relationship and so the high time is motivated by a research on the best way to relate with a third party.
+
+\begin{landscape}
+\centering
+\begin{table}
+{\tiny
+\begin{tabular}{|l|l|l|l|l|l|l|}
+Business process&Activity&Performer&Number&Execution time&Cycle time&Costs\\
+\hline
+Public Relation Management 0.1&&&&00:000:03:07:12&00:000:04:30:24&33,848000\\
+\hline
+&Information to comunicate &&1,000000&00:000:00:30:00&&0,200000\\
+\hline
+&&Area Manager &1,000000&00:000:00:30:00&&0,200000\\
+\hline
+&Build or group elements to comunicate &&1,000000&00:000:00:20:00&&0,200000\\
+\hline
+&&Representative &1,000000&00:000:00:20:00&&0,200000\\
+\hline
+&Prepare the format - report &&1,000000&00:000:00:40:00&&3,000000\\
+\hline
+&&Representative &1,000000&00:000:00:40:00&&3,000000\\
+\hline
+&Plan the meet &&1,000000&00:000:00:10:00&&0,200000\\
+\hline
+&&Representative &1,000000&00:000:00:10:00&&0,200000\\
+\hline
+&Contact customer &&1,000000&00:000:00:50:00&&30,000000\\
+\hline
+&&Representative &1,000000&00:000:00:50:00&&30,000000\\
+\hline
+&Analyze client profile &&1,240000&00:000:00:37:12&&0,248000\\
+\hline
+&&Area Manager &1,240000&00:000:00:37:12&&0,248000\\
+\hline
+Total&&&&00:000:03:07:12&&33,848000\\
+\end{tabular}
+}
+\caption{Capacity analysis for Public Relation Management.}
+\end{table}
+\end{landscape}
+%
+
+%
