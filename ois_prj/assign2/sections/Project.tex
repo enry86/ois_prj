@@ -178,16 +178,18 @@ Accordingly with figure \ref{2img:implementation}, the great major of the activi
 
 
 \subsubsection{Path Analysis}
-The path analysis reveals several possible paths, lot of them don't have a relevant probability. To first two are very interesting since the execution time is completely different as shown in the table below. The second one shows what happen if the Programmer doesn't recognize the correct features representation assigned to him.
+The path analysis reveals several possible paths, lot of them don't have a relevant probability. To first two are very interesting since the execution time is completely different as shown in the table below. The second one shows what happen if the Programmer doesn't recognize the correct features representation assigned to him. The results match perfectly with the expectations since the Process is calibrate about an evolving implementation model.
 
-\begin{table}
+\begin{table}[ht!]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
+\hline
 Path&Probability&Execution time&Cycle time&Costs\\
 \hline
 1&0,5890&00:000:05:20:00&00:000:05:50:00&1,60\\
 \hline
-2&0,1760&00:001:00:25:00&00:001:01:25:00&3,2
+2&0,1760&00:001:00:25:00&00:001:01:25:00&3,2\\
+\hline
 \end{tabular}
 \end{table}
 
@@ -250,13 +252,14 @@ End: End
 
 
 \subsubsection{Capacity Analysis}
-This capacity analyssi represent the characteristic of each activity in order to evaluate possibile strategy. The process is referred to only one developer or working unit.
+This capacity analysis represent the characteristic of each activity in order to evaluate possibile strategy. The process is referred to only one developer or working unit. Interesting are the ``Analyze the reference implementation'', ``Implementation'', ``Testing the implementation'' and ``Integrate with other sections'' that are executed significatively more than once. This is forseen for the Business Process model and is considered to best fit the requirement of the moment.
 
 \begin{landscape}
 \begin{table}
 \centering
 {\tiny
 \begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
 Business process&Activity&Performer&Number&Execution time&Cycle time&Costs\\
 \hline
 Implementation 0.1&&&&00:000:08:33:36&00:000:09:22:27&3,018800\\
@@ -289,7 +292,8 @@ Implementation 0.1&&&&00:000:08:33:36&00:000:09:22:27&3,018800\\
 \hline
 &&Programmer &0,043000&00:000:00:01:56&&0,430000\\
 \hline
-Total&&&&00:000:08:33:36&&3,018800
+Total&&&&00:000:08:33:36&&3,018800\\
+\hline
 \end{tabular}
 }
 \caption{Capacity analysis for Implementation.}
@@ -316,14 +320,18 @@ There are several activities which need the collaboration of both Programmer and
 \subsubsection{Path Analysis}
 The path analysis reveals two important path represented in the following schemas. Particular interesting is the second one which represent the case of System not ready and so the process is delayed to prepare it to host the Product.
 
+The most probability one take the 81,40\% probability to happens and is perfect matching the AllSpark's will of less problems in deployment.
+
 \begin{table}
 \centering
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|l|l|}[ht!]
+\hline
 Path&Probability&Execution time&Cycle time&Costs\\
 \hline
 1&0,8140&00:000:01:25:00&00:000:01:45:00&10,40\\
 \hline
-2&0,1510&00:000:02:55:00&00:000:03:28:00&11,4
+2&0,1510&00:000:02:55:00&00:000:03:28:00&11,4\\
+\hline
 \end{tabular}
 \end{table}
 
@@ -369,7 +377,7 @@ End: End
 
 
 \subsubsection{Capacity Analysis}
-The capacity analysis reveal the expected value about the possibility having a particular activity.
+The capacity analysis reveal the expected value about the possibility having a particular activity. None of the resulting elements disagree with the thought results. Since each activity respect the one shot execution, there aren't possible improvements.
 
 \begin{landscape}
 \begin{table}
