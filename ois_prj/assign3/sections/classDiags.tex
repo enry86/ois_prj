@@ -86,4 +86,26 @@ Picture \ref{3img:classres} depicts this structure.
 \label{3img:classres}
 \end{figure}
 
+\section{Courses section}
+The organization of the formative courses is managed by a specific branch
+of the database, and its structure is described by the class diagram in
+figure \ref{3img:classcou}.
+The information system permits to hold informations about the course
+material used and about the lecturers for each course.
+
+Another important feature is the association of the course with the
+certification which grants. 
+The database contains informations about the exam of the course, its
+details and the dates in which it takes place.
+
+The people who takes the course are considered as en extension  of
+Customer, with some additional information about the hours of class
+attended and the exam results.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{assign3/argo/imgs/courses.png}
+\caption{Class diagram describing the courses part of the database}
+\label{3img:classcou}
+\end{figure}
 
