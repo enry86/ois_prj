@@ -168,7 +168,7 @@ End: End
 \subsubsection{Capacity Analysis}
 In the capacity analysis of the process reported below, is possible to observe that the task is very wasting both in terms of time and in costs.
 
-It is important to underline that the Process is defined to be performed at least once a month.
+It is important to underline that the Process is defined to be performed at least once a month and the result obtained by the simulation agree in the forseen time employed, this is defined by a higher probability of the choice in the modeled Business Process.
 
 \begin{landscape}
 \centering
@@ -242,22 +242,24 @@ The figure \ref{2img:financial_sup} reports the representation of the discussion
 
 
 \subsubsection{Path Analysis}
-The path analysis shows fifteen paths which three of them really important. The following table illustrate their characteristics.\\
+The path analysis shows fifteen paths which three of them really important. The following table illustrate their characteristics.
 
-\begin{table}
-\centering
+\begin{table}[ht!]
+\ventering
 \begin{tabular}{|l|l|l|l|l|}
+\hline
 Path&Probability&Execution time&Cycle time&Costs\\
 \hline
 1&0,6120&00:000:02:15:00&00:000:03:01:00&66,20\\
 \hline
 2&0,1650&00:000:02:55:00&00:000:03:01:00&116,20\\
 \hline
-3&0,1010&00:000:03:05:00&00:000:03:16:00&66,20
+3&0,1010&00:000:03:05:00&00:000:03:16:00&66,20\\
+\hline
 \end{tabular}
 \end{table}
 
-The favorite path is the first and it is presented as follows.\\
+The favorite path is the first, with the expected probability of 0,6120\% due to the decision of ``Does exist a responsible of a simila task?''. It would useful to improve this point structuring a stronger  and it is presented as follows.\\
 
 \begin{alltt}
 Probability:   61,2000\%
@@ -296,7 +298,7 @@ End: End
 
 
 \subsubsection{Capacity Analysis}
-The capacity analysis of the process figures as expectations that the business consultant is the primary role in the task and basically the business process is a sequential step of his work.
+The capacity analysis of the process figures as expectations that the business consultant is the primary role in the task and basically the business process is a sequential step of his work. In the analysis there is a great difference between the Cycle time and the Execution time and this is due to the time spent by the Business Operator in its tasks. A solution may be a better parallelization of the critical activity in order to standardize the outputting time.
 
 \begin{landscape}
 \centering
@@ -372,18 +374,20 @@ The interested performers are primary the business consultant and CEO who are su
 
 
 \subsubsection{Path Analysis}
-The analysis of possible paths results thre correspondence with interesting probability, one of them with the 56,70\% of probability to be performed. The analysis returns that paths have very similar time and costs and so are not so significative in hte study of this process; this means that the Company has standardize the process to be more or less as expectations. The highest probability path is reported straight after the following table.
+The analysis of possible paths results the correspondence with interesting probability, one of them with the 56,70\% of probability to be performed. The analysis returns that paths have very similar time and costs and so are not so significative in the study of this process; this means that the Company has standardized the process to be more or less as expectations. The highest probability path is reported straight after the following table.
 
-\begin{table}
+\begin{table}[ht!]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
+\hline
 Path&Probability&Execution time&Cycle time&Costs\\
 \hline
 1&0,5670&00:018:07:50:00&00:001:00:25:00&2207,80\\
 \hline
 2&0,2140&00:018:08:35:00&00:001:00:25:00&2208,10\\
 \hline
-3&0,1450&00:018:07:40:00&00:001:00:25:00&2207,05
+3&0,1450&00:018:07:40:00&00:001:00:25:00&2207,05\\
+\hline
 \end{tabular}
 \end{table}
 
@@ -439,6 +443,8 @@ End: End
 
 \subsubsection{Capacity Analysis}
 The capacity analysis of the process illustrates the specified timing and costs forseen for the single activities. Morevover it exlicities the Performer associated to each activity in order to check the responsibility for each step of the Business Process.
+
+In this process the timing are very huge since the activities work on ``human'' domain and in particular the campaign commitment has to be completed before going to next activity. The difference between the Cycle time and Execution time is however curious since it is very wide. The motivation of this difference comes out from waiting and resting time elencated in the table above path analysis. This is a well known issue that arise in human to human reports and the only way to improve is to reduce the dead-time if the internal AllSpark's policy agree.
 
 \begin{landscape}
 \centering

@@ -22,6 +22,8 @@ Except for the Requirement gathering subprocess, whose responsible is the repres
 \subsubsection{Path Analysis}
 The path analysis procedure returns twenty-one distinct paths with the maximum probability of 67,10\% for the one reported straightward. The simplicity of the model came from the header of the path analysis shown next since the cycle time is actual the sum of all times.
 
+The high number of paths are not well viewed by the AllSpark cause the missunderstanding or the unsactisfiability of requirements, so it would be necessary a improvement of the ``Requirement gathering'' activity.
+
 \begin{alltt}
 Probability:   67,1000\%
 Execution time:  00:000:07:20:00
@@ -52,7 +54,7 @@ End: End
 
 
 \subsubsection{Capacity Analysis}
-The capacity analysis doesn't reveal any interesting information.
+The capacity analysis reveals the interesting information about the number of time the ``Requirement formalization'' and ``Requirement gathering'' have to be done. This is like the expectations since the experience tought that is still a good target, but in order to improve the efficiency, some filtering should be implemented directly on the ``Requirement gathering'' in order to done well at first shot.
 
 \begin{landscape}
 \begin{table}
@@ -100,7 +102,7 @@ Total&&&&00:000:09:19:01&&2,720800
 \subsection{Desing/Planning project}
 The ``Design/Planning project'' business process aim to represent the deterministic stage required for start the project. Since is a common standardize phase, is obviusly without any decision point since all the constitutive activities are needed and well defined. 
 
-The Path analysis is so useless and it will skipped.
+The Path analysis is so useless given the linearity of the process and it has been skipped.
 
 \begin{figure}[ht!]
 \begin{centering}
@@ -112,7 +114,7 @@ The Path analysis is so useless and it will skipped.
 
 
 \subsubsection{Capacity Analysis}
-The capacity analysis permits to see each activity behaviour. Particula interesting is the difference between Execution time and the Cycle time that reveals the efficiency of parallelization of activities which permits, in this case, a gain of working hours.
+The capacity analysis permits to see each activity behaviour. Particular interesting is the difference between Execution time and the Cycle time that reveals the efficiency of parallelization of activities which permits, in this case, a gain of working hours.
 
 \begin{landscape}
 \begin{table}
