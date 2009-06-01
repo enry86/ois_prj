@@ -1,0 +1,35 @@
+\chapter{Information System}
+ 
+\section{Information System structure}
+AllSpark is an enterprise which is involved deeply in the Information Technology and its Information System structure is articulated in order to efficiently face the works thanking the gathered in the job sector.
+
+Since the digital technology reach each task of the Company, a lot of operations are thought to be performed through the automatic management except for the ones that need the human supervision due the critical objective such as business operations. 
+
+The Information System structure base its functionality on six independent server that are charged to satisfy functions for a defined close context and several independent lightweight computers adopted by the personal that use the servers provide functionalities. This is a modularization of the working load to improve efficiency and reliability.
+
+The six servers are represented in figure \ref{2img:NetMap} and follow described:
+\begin{description}
+\item[Administrative Server:] is the main server for the Company's lifecycle operations. This is the core of the aggregated functionalities such as the Business operations, the high level resource management and authority identification.
+\item[Project Support Server:] aims to furnish the best services to developers regrouping data, resources and services used during the Project development. The unique scope of this machine is to supply each needing of Projects.
+\item[Accounting Server:] tracks the users' public information such as their presence and their basic information unsed by the System to recognize them inside the Company and give the relative authorizations.
+\item[File Server:] is the core of AllSpark's data storage which contains all kind of data used by the Company comprehensive the historical data and the supporting data for the Administrative Server. 
+\item[Customer Accounting Server:] it stores a series of informations of customers in order to be reused by the business. In particular it store data about the customer identity, products bought and commercial relevance data about relation with AllSpark.
+\item[Financial Server:] reserves all its work to the management of business activities that need to be separated from others system to avoid possible data corruption.
+\end{description}
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.45]{assign3/dia/NetMap.jpeg}
+\caption{AllSpark Network Map.}
+\label{2img:NetMap}
+\end{centering}
+\end{figure}
+
+
+\section{Use case diagrams}
+The AllSpark Information System foresee several actors that are involved to and are represented in the following diagrams. Each actor represent a single entity or a general one such as the ``Secretary'' who describe several complementary people.
+
+The functions are pretty isolated since the structure has been thought to be modular in the scope to be robust and in particular for each area described in \ref{2img:cmap} there is a use case; the Research and Development area does not have a different kind of informations with respect the Project and so is treated as it. In order to be clear each server functionality group together several use case that are ordered as independent functions for a single server.
+ 
+ 
+\input{assign3/sections/useCases}
