@@ -38,3 +38,28 @@ details of this database in the form of a class diagram.
 \label{3img:classadmin}
 \end{figure}
 
+\subsection{Project Section}
+The branch of the database which manages the handling of the data related
+to the projects is depicted in figure \ref{3img:classprj}.
+One of the relevant thing is the managing of the budget specific for each
+project, In fact every resource used for the project, which often is an
+hardware resource or an intervention of technical assistance (internal or
+external), is accounted on the project budget.
+
+Other parts of the database maintain the informations about the various
+teams which cooperates in the project, specifying their roles and members.
+For a human resource point of view, the actors involved in a project
+lifecycle are usually a manager and a variable number of developers and
+analysts. 
+
+The case of a research project falls into the general definition of a
+common project, effectively, from a data point of view, there are no
+relevant differences between the two kind of projects.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.50]{assign3/argo/imgs/project.png}
+\caption{Class diagram describing the project branch of the database}
+\label{3img:classprj}
+\end{figure}
+
