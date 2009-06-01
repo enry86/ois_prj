@@ -325,7 +325,7 @@ The most probability one take the 81,40\% probability to happens and is perfect 
 \begin{table}
 \centering
 \begin{tabular}{|l|l|l|l|l|}[ht!]
-\hline
+% \hline
 Path&Probability&Execution time&Cycle time&Costs\\
 \hline
 1&0,8140&00:000:01:25:00&00:000:01:45:00&10,40\\
@@ -447,14 +447,18 @@ A great part of activities are supervised, as common in this Area, by the Analys
 \subsubsection{Path Analysis}
 There are seven different kind of relevant paths that the analysis reveals, two of them are presented in the table below. The less probable of the two is the cheaper in the timing consuming measurement of all the seven, so both paths are presented straight forward the table.
 
-\begin{table}
+The first one is the favourite for the activities performed and the probability is enough to be satisfied of the results.
+
+\begin{table}[ht!]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
+\hline
 Path&Probability&Execution time&Cycle time&Costs\\
 \hline
 1&0,5400&00:000:02:15:00&00:000:02:20:00&1,60\\
 \hline
-2&0,2800&00:000:01:25:00&00:000:01:30:00&0,8
+2&0,2800&00:000:01:25:00&00:000:01:30:00&0,8\\
+\hline
 \end{tabular}
 \end{table}
 
