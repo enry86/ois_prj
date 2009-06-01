@@ -1,0 +1,40 @@
+\section{DataBase design}
+In this section is presented the structure of the database which supports
+the activities of the AllSpark organization.
+In order to provide a more clear picture of the structure the database is
+divided in different sections. 
+
+Each one of this supports a different section of the organization, briefly
+they are:
+\begin{description}
+\item[Administration: ] Provide support for the employees, projects and
+customer organization.
+\item[Project: ] Here are stored all the information of the projects on
+which the organization is working.
+\item[Resources: ] This part provides support for hosting the resources of
+the enterprise, such as documentation, project details.
+\end{description}
+
+\subsection{Administrative section}
+This section of the information system provides support for the
+administrative part of AllSpark organization.
+In particular it handles the employees administration, with their
+specialization and roles. The activity classes permits to track a log of
+each worker activity and to plan future event as meetings or deadlines.
+
+Moreover it manages the inventory of the organization, which is mainly
+composed by software and hardware (servers, network infrastructures). It
+contains the references to the suppliers list, in order to retrieve
+informations who supplied each item used in the organization.
+
+In this part of the database is stored even the customer and their
+relative contracts details. The image in \ref{3img:classadmin} shows the
+details of this database in the form of a class diagram.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.50]{assign3/argo/imgs/administrative.png}
+\caption{Class diagram describing the administration database}
+\label{3img:classadmin}
+\end{figure}
+
