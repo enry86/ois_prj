@@ -193,15 +193,15 @@ At this level Time is considered as description of the business cycle and the bu
 
 In order to provide an efficient service there are some particular case the AllSpark has to consider may happen, in particular the events that characterize some primary actions are:
 \begin{itemize}
-  \item {\bf Hardware fault:} it's well known that each physical component has a lifetime over which the broke's likelihood grow, but more trivial may be a simple imperfect component that brokes even though it's new. The whole system is studied to minimize the negative impact and default procedural assure the suitable repair in few hours without affecting the global functionality.
+  \item {\bf Hardware fault:} it's well known that each physical component has a lifetime over which the broke's likelihood grow, but more trivial may be a simple imperfect component that brokes even though it's new. The whole system is studied to minimize the negative impact and default procedural assure, if the replacement components are on the AllSpark store, the suitable repair in few hours without affecting the global functionality.
 % 	\subitem \textit{repair:} In the case of faulty is important to recognize quickly the harm and provide the right substitution procedure. Moreover is interesting adopt some security mechanism in order to avoid systems' downtime;
-  \item {\bf Service down:} for several reasons a service may go down, in particular after an update, a hardware or security fault, a ISP cutting down line and an another service configuration. Bearing in mind the efficiency, the functionality is restored having a short technical analysis to isolate the problem followed by the appropriate resolving procedure;
+  \item {\bf Service down:} for several reasons a service may go down, in particular after an update, a hardware or security fault, a ISP cutting down line and an another service configuration. If the ill service does not come from an external entity, bearing in mind the efficiency, the functionality is restored having a short technical analysis to isolate the problem followed by the appropriate resolving procedure;
 % 	\subitem \textit{repair};
-  \item {\bf Security fault:} all the services offered are avaiable through the Internet and even though the continue improvements and researches done by the employees to mantain the system secure and usable it may happen that someone can force the defenses. Hence it's important recognize the issue and perform a security analysis in order to raise the defence;
+  \item {\bf Security fault:} all the services offered are avaiable through the Internet and even though the continue improvements and researches done by the employees to mantain the system secure and usable it may happen that someone can force the defenses. Hence it's important recognize the issue and perform a security analysis in order to raise the defence if the existing defensive shield is bypassed.
 % 	\subitem \textit{security analysis};
-  \item {\bf Project late:} due requirement changing or developing issues a project should acquire delay. When it exceeds the prefixed boundary is necessary to study the causes and eventually reengineer the project to restore the efficiency;
+  \item {\bf Project late:} due requirement changing or developing issues a project should acquire delay. When it exceeds the prefixed boundary, if the responsible can realize the issue, is necessary to study the causes and eventually reengineer the project to restore the efficiency;
 % 	\subitem \textit{project analysis};
-  \item {\bf ISP down:} a dangerous issue that compromise the work and for which the Company cannot resolve is the Internet cut line. The best tradeoff is the load balancing through the several Internet connection of different ISP;
+  \item {\bf ISP down:} a dangerous issue that compromise the work and for which the Company cannot resolve is the Internet cut line. If AllSpark owns a backup line with a different provider, the best tradeoff is the load balancing through the several Internet connection of different ISP;
 % 	\subitem \textit{load balancing};
 \end{itemize}
 
@@ -215,6 +215,10 @@ All the other relations depend on the third party's context and are not well def
 
 A very noticeable note is about the ``where'' the work is done by the AllSpark; the most of the work is performed on the systems inside the building that are projected to the World through the Internet, so it is particular important the connectivity which permits to be ``everywhere'' at the same time. In order to be specific clear the Organization claims some rights about itself names, hosted names and Internet adresses to figure unique in the World, hence a lot of URI collected by the company in several years have to be constantly renewed and updated.
 
+
+% =================
+% Enterprise model, 2^ Row Zachman framework
+% =================
 
 \section{Enterprise Model}
 \label{sec:Enterprise}
@@ -318,19 +322,21 @@ the main data on which our organization works.
 \label{subsec:enterprise[Time]}
 Since there are different areas that may cooperate, it is also necessary have weekly meeting with the relative area manager and the administrative staff. In particular there are some meeting needed to check the current state of the company business and they can be every month or semestral. Meetings are important in order to track the employees' jobs, to bear projects advancing, to analyze statistical reports, to shot the company status and finally to make strategic decisions.
 
+Regarding the events coming from \ref{subsec:scope[Time]}, there is direct correspondence at this level that is build as they are since the elements affecting the internal personal are the same that affect the outside people and the actions involved are common to resolve the issues.
+
 
 \begin{itemize}
-  \item {\bf New Project started:} once the customer commit a work instance is necessary to evaluate the dimension of it through a complete deep analysis of the matter. A series of steps provide a complete allocating of resources starting from the human resources and ending with hardware and software ones needed.
+  \item {\bf New Project started:} once the customer commit a work instance is necessary to evaluate the dimension of it through a complete deep analysis of the matter. If the Project receives the definitive approval by the CEO, a series of steps provide a complete allocating of resources starting from the human resources and ending with hardware and software ones needed.
 % 	\subitem \textit{start};
-  \item {\bf Salary\_day reached:} during the last month's week the the employees have right to receive the regular payment that should be calculated opportunely for each person based upon the enroll contract and the extra hours effectively worked;
+  \item {\bf Salary\_day reached:} during the last month's week the the employees have right to receive the regular payment that should be calculated opportunely for each person based upon the enroll contract and the extra hours effectively worked if they have respected the contract;
 % 	\subitem \textit{get\_salary};
-  \item {\bf Project closed:} when a project reaches the endline, a couple of tasks have to be activated to conclude the activity. In particular there is the unallocating the resources and the analysis of the project in order to improve the methods, the skills for the future ones and understanding the mistakes if the project is aborted or store the partial work done if it should be used in other projects;
+  \item {\bf Project closed:} when a project reaches the endline, a couple of tasks have to be activated to conclude the activity. If the CEO accept the closure, then start unallocating the resources and the analysis of the project in order to improve the methods, the skills for the future ones and understanding the mistakes if the project is aborted or store the partial work done if it should be used in other projects;
 % 	\subitem \textit{project analysis};
   \item {\bf Found a bug:} during the usual working process may happen some software error. Since the AllSpark is using a lot of free software and belives in its principles, after a brief analysis a warning report is sent to the software's developers. In the free software mind the code is easily distribuited and so a deep analysis may take place. If it reveals that the problem can be patched by an internal team, then a new internal project start in order to fix the problem. It's quite difficult manage the resource for a project of this kind and so an endterm is set to bound the costs;
 % 	\subitem \textit{track bug};
 % 	\subitem \textit{can be patched?};
 % 		\subsubitem \textit{patch it};
-  \item {\bf New Technology developed:} all around the world there are standardizing groups, Web developers and so on that publish new technology which influence the Web. In order to get them the Company foreseen update meeting each six months in which the employees can fill the gap followed thanks external consultant who exposes the news.
+  \item {\bf New Technology developed:} all around the world there are standardizing groups, Web developers and so on that publish new technology which influence the Web. If the Company's status is good, then AllSpark foreseen update meeting each six months in which the employees can fill the gap followed thanks external consultant who exposes the news.
 \end{itemize}
 
 \subsection{Network (Where)}
