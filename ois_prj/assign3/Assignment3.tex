@@ -7,7 +7,7 @@ Since the digital technology reach each task of the Company, a lot of operations
 
 The Information System structure base its functionality on six independent server that are charged to satisfy functions for a defined close context and several independent lightweight computers adopted by the personal that use the servers provide functionalities. This is a modularization of the working load to improve efficiency and reliability.
 
-The six servers are represented in figure \ref{2img:NetMap} and follow described:
+The six servers are represented in figure \ref{3img:NetMap} and follow described:
 \begin{description}
 \item[Administrative Server:] is the main server for the Company's lifecycle operations. This is the core of the aggregated functionalities such as the Business operations, the high level resource management and authority identification.
 \item[Project Support Server:] aims to furnish the best services to developers regrouping data, resources and services used during the Project development. The unique scope of this machine is to supply each needing of Projects.
@@ -21,7 +21,7 @@ The six servers are represented in figure \ref{2img:NetMap} and follow described
 \begin{centering}
 \includegraphics[scale=0.45]{assign3/dia/NetMap.jpeg}
 \caption{AllSpark Network Map.}
-\label{2img:NetMap}
+\label{3img:NetMap}
 \end{centering}
 \end{figure}
 
@@ -31,6 +31,45 @@ The AllSpark Information System foresee several actors that are involved to and 
 
 The functions are pretty isolated since the structure has been thought to be modular in the scope to be robust and in particular for each area described in \ref{2img:cmap} there is a use case; the Research and Development area does not have a different kind of informations with respect the Project and so is treated as it. In order to be clear each server functionality group together several use case that are ordered as independent functions for a single server.
  
- 
+
+% =================
+% Use Cases
+% ================= 
 \input{assign3/sections/useCases}
+
+% =================
+% Class Diagram
+% =================
 \input{assign3/sections/classDiags}
+
+% =================
+% Sequence
+% =================
+\section{Sequence diagrams}
+The step closer to the function implemented by the Information Systems is the sequence diagram analysis which permit a deeper view on the functions adopted by actors, in particular it shows the exchangin messages between the several components of the Systems to accomplish the task.
+
+Of all the operations described above, only the most important have been modeled, in particular are:
+\begin{itemize}
+ \item \textit{Login:} sequence of interaction that bring an user into the System.
+ \item \textit{Sending order:} steps needed to request material to supplier.
+ \item \textit{Maintenance schedule:} interactions to System Manager's maintanance task.
+ \item \textit{Meeting management:} requested steps to fix a meeting.
+
+ \item \textit{Project planning:} sequence of messages required to plan a project.
+ \item \textit{Checking work:} list of sequential passages to monitor the work.
+ \item \textit{Team monitoring:} the sequential messages exchange to retrieve informations about a team.
+
+ \item \textit{Course log:} series of step to maintain the logbook.
+ \item \textit{Certification:} sequence required to the certification delivery.
+
+ \item \textit{Campaign planning:} set of messages exchange to plan a marketing campaign.
+
+ \item \textit{Inventory management:} representation of the inventor task.
+
+ \item \textit{Editing documentation:} the sequential messages evolving during the editing.
+\end{itemize}
+
+
+\input{assign3/sections/Administrative}
+\input{assign3/sections/Commercial}
+\input{assign3/sections/Project}
