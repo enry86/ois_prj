@@ -1,0 +1,425 @@
+\documentclass{beamer}
+
+\usepackage{textcomp}
+\usepackage{graphicx}
+
+\usepackage{pgfpages}%questo serve per gli handouts
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm]
+
+%\setbeameroption{hide notes}
+\usetheme{PaloAlto}
+
+
+
+
+
+
+\pgfdeclareimage[height=16mm]{logo}{img/logos/atlogo_superredux}
+
+\logo{\pgfuseimage{logo}}%qua ci mettiamo il logo bello
+
+\title{PIZZA @\\Take Part to the 2.0 Takeaway!}
+
+\author{Aaron Ciaghi \and Davide Mottin}
+\institute{Universit\`{a} degli Studi di Trento}
+\date{\today}
+
+\begin{document}
+
+\AtBeginSection[]
+{
+	\begin{frame}
+	 \frametitle{Outline}
+	 \tableofcontents[currentsection]
+	\end{frame}
+}
+
+\begin{frame}
+ \titlepage
+\end{frame}
+
+\section*{Outline}
+\begin{frame}
+ \frametitle{Outline}
+ \tableofcontents
+\end{frame}
+
+\section{The Organization}
+\subsection{From Pizza Rio...}
+\begin{frame}{From Pizza Rio...}{Pizza al Taglio}
+ \begin{block}{Pizza Rio}
+  \begin{itemize}
+   \item Family run Pizza al Taglio shop
+   \item Very small business (4-5 employees)
+   \item Equipped with
+   \begin{itemize}
+    \item a small laboratory
+    \item a small store
+    \item pizza making devices
+   \end{itemize}
+   \item Popularity among Faculty of Science students and workers
+   \item Customers: students and university employees (at lunchtime), families and other people (at dinnertime)
+  \end{itemize}
+  \begin{center}
+   Belongs to \textbf{Confartigianato} (artisans confederation)
+  \end{center}
+ \end{block}
+\end{frame}
+
+\subsection{...to Pizza @}
+\begin{frame}{...to Pizza @}{Pizza al Taglio Fast Food Chain}
+ \begin{block}{Pizza @ Vision}
+ \begin{itemize}
+  \item Business-like management
+  \item Fast food chain (1 head shop and 3 branch shops serving the whole city of Trento)
+  \item Improved Customer Service
+  \item Equipped with:
+  \begin{itemize}
+   \item one large laboratory (serving the branches)
+   \item one large store (serving the branches)
+  \end{itemize}
+ \end{itemize}
+ \begin{center}
+  Move to \textbf{Confcommercio} (trade confederation \textcopyright)
+ \end{center}
+ \end{block}
+\end{frame}
+
+\begin{frame}{External Goals}{What do we want to achieve?}
+\only<1>{
+We have 4 main stakeholders:
+\begin{itemize}
+ \item Customer
+ \item Pizza @ Management
+ \item Pizza @ Retailer
+ \item Supplier
+\end{itemize}
+}
+\only<2>{
+The customer basically wants to eat pizza and wants it to be tasty.
+\begin{block}{Customer i* diagram}
+\begin{center}
+ \includegraphics[width=4cm]{img/Customer_extgoals.png}
+ % Customer_extgoals.png: 453x438 pixel, 96dpi, 11.98x11.59 cm, bb=0 0 340 328
+ \end{center}
+\end{block}
+}
+\only<3>{
+All Pizza @ retailers want to make money and to increase their customer base.
+\begin{block}{Pizza @ Retailer i* diagram}
+\begin{center}
+ \includegraphics[width=5cm,bb=0 0 400 348]{img/Retailer_extgoals.png}
+ % Retailer_extgoals.png: 533x464 pixel, 96dpi, 14.10x12.28 cm, bb=0 0 400 348
+\end{center}
+\end{block}
+}
+\only<4>{
+Pizza @ Management wants the business to be successful.
+\begin{block}{Pizza @ Management i* diagram}
+\begin{center}
+ \includegraphics[width=4cm,bb=0 0 301 224]{img/PizzaAt_extgoals.png}
+ % PizzaAt_extgoals.png: 402x299 pixel, 96dpi, 10.63x7.91 cm, bb=0 0 301 224
+\end{center}
+\end{block}
+}
+\only<5>{
+All Pizza @ Suppliers want to make money by providing quality products to our company.
+\begin{block}{Supplier i* diagram}
+\begin{center}
+ \includegraphics[width=5cm,bb=0 0 436 220]{img/GenericSupplier_extgoals.png}
+ % GenericSupplier_extgoals.png: 582x293 pixel, 96dpi, 15.40x7.75 cm, bb=0 0 436 220
+\end{center}
+\end{block}
+}
+\only<6>{
+ \begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 1341 793]{img/people.png}
+ % people.png: 1788x1058 pixel, 96dpi, 47.30x27.99 cm, bb=0 0 1341 793
+\end{center}
+}
+\end{frame}
+
+\begin{frame}{Data}{What do we need?}
+The important concepts for our company are:
+\begin{columns}
+ \column{.47\textwidth}
+ \begin{block}{Externally}
+  \begin{itemize}
+ \item Pizza
+ \item Booking service (by phone, online, directly at the shop)
+ \item Speed
+ \item Efficiency
+ \item Customer care
+ \item Advertising
+ \item Good prices
+ \item Promotions
+\end{itemize}
+\end{block}
+\column{.47\textwidth}
+\begin{block}{Internally}
+\begin{itemize}
+ \item Pizza @
+ \item Pizza
+ \item Employees
+ \item Pizzeria
+ \item Marketing
+ \item Suppliers
+ \item Vehicles
+ \item Laboratory
+ \item Store
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{People}{Who wants to do what?}
+ \only<1>{
+ \begin{block}{Informal view}
+  \begin{center}
+ \includegraphics[height=.8\textheight,bb=0 0 458 598]{img/OIS_Project_rev_tr.png}
+ % OIS_Project_rev.png: 458x598 pixel, 72dpi, 16.16x21.10 cm, bb=0 0 458 598
+\end{center}
+ \end{block}
+ }
+ \only<2>{
+ \begin{block}{i* view}
+  \begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 907 428]{img/people_int_tr.png}
+ % people_int.png: 1210x571 pixel, 96dpi, 32.01x15.11 cm, bb=0 0 907 428
+\end{center}
+ \end{block}
+ }
+ \only<3>{
+ \begin{block}{Relationships}
+ \begin{center}
+ \includegraphics[width=8.5cm,bb=0 0 1084 811]{img/int_goals_tr.png}
+ % int_goals_tr.png: 1446x1081 pixel, 96dpi, 38.25x28.60 cm, bb=0 0 1084 811
+\end{center}
+ \end{block}
+ }
+\end{frame}
+
+\begin{frame}{Functions}{How are we achieving our goals?}
+ Pizza @ performs the following main activities:
+ \begin{itemize}
+ \item Pizza production
+ \item Pizza home delivery and takeaway
+ \item Pizza booking (by phone or Internet)
+ \item Marketing (strategies to ensure customers satisfaction)
+ \item Supplies purchasing (and dealing with suppliers)
+\end{itemize}
+\end{frame}
+
+% 1. vision
+% 2. servizi e obiettivi (cosa vogliamo offrire)
+% 3. interno/esterno slides
+
+\section{Business Processes}
+\subsection{Company Map}
+\begin{frame}{Business Processes}{Company Map}
+\only<1>{
+\begin{center}
+ \includegraphics[height=1\textheight-0.3cm,bb=0 0 1866 2135]{img/PizzaAtCM.png}
+ % PizzaAtCM.png: 1866x2135 pixel, 72dpi, 65.83x75.32 cm, bb=0 0 1866 2135
+\end{center}
+}
+\only<2>{
+\begin{center}
+ \includegraphics[height=1\textheight-0.3cm,bb=0 0 2100 2135]{img/PizzaAtCMPizzeria.png}
+ % PizzaAtCMPizzeria.png: 2100x2135 pixel, 72dpi, 74.10x75.34 cm, bb=0 0 2100 2135
+\end{center}
+
+}
+\only<3>{
+\begin{center}
+ \includegraphics[height=1\textheight-0.3cm,bb=0 0 2100 2135]{img/PizzaAtCMSupplyChain.png}
+ % PizzaAtCMSupplyChain.png: 2100x2135 pixel, 72dpi, 74.10x75.34 cm, bb=0 0 2100 2135
+\end{center}
+
+}
+\only<4>{
+\begin{center}
+ \includegraphics[height=1\textheight-0.3cm,bb=0 0 2100 2135]{img/PizzaAtCMMarketing.png}
+ % PizzaAtCMMarketing.png: 2100x2135 pixel, 72dpi, 74.10x75.34 cm, bb=0 0 2100 2135
+\end{center}
+
+}
+\only<5>{
+\begin{center}
+ \includegraphics[height=1\textheight-0.3cm,bb=0 0 2100 2135]{img/PizzaAtCMCouncil.png}
+ % PizzaAtCMCouncil.png: 2100x2135 pixel, 72dpi, 74.10x75.34 cm, bb=0 0 2100 2135
+\end{center}
+
+}
+\end{frame}
+
+\subsection{Working Environment}
+\begin{frame}{Business Processes}{Working Environment}
+\only<1>{
+\begin{center}
+ \includegraphics[height=1\textheight-0.3cm,bb=0 0 618 843]{img/PizzaAtWE.png}
+ % PizzaAtWE.png: 1288x1757 pixel, 72dpi, 45.44x61.98 cm, bb=0 0 1288 1757
+\end{center}
+}
+\only<2>{
+\begin{center}
+ \includegraphics[width=1\textwidth]{img/PizzaAtWEMain.png}
+ % PizzaAtWEMain.png: 1228x792 pixel, 150dpi, 20.79x13.41 cm, bb=0 0 589 380
+\end{center}
+}
+\only<3>{
+\begin{center}
+ \includegraphics[height=1\textheight - 0.3cm]{img/PizzaAtWERetailer.png}
+ % PizzaAtWERetailer.png: 384x600 pixel, 150dpi, 6.50x10.16 cm, bb=0 0 184 288
+\end{center}
+
+}
+\end{frame}
+
+\subsection{V.I.P.s}
+\begin{frame}{Business Processes}{V.I.P.s (Very Important Processes)}
+ The information system that we want to introduce comes into play (mainly) in the following processes:
+ \begin{itemize}
+  \item Pizza booking
+  \item Accounting and employees management
+  \item Orders and Delivery management
+  \item Store Management
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Business Processes}{Accounting and Employees Management}
+ \begin{columns}
+  \column{.47\textwidth}
+  \only<1>{
+  \begin{center}
+ \includegraphics[height=1\textheight-0.5cm,bb=0 0 672 1509]{img/EmployeesManagement.png}
+ % EmployeesManagement.png: 672x1509 pixel, 72dpi, 23.71x53.23 cm, bb=0 0 672 1509
+\end{center}
+}
+\only<2>{
+\begin{center}
+ \includegraphics[width=1\textwidth]{img/EmployeesManagement_p1.png}
+ % EmployeesManagement_p1.png: 663x885 pixel, 72dpi, 23.39x31.22 cm, bb=0 0 663 885
+\end{center}
+}
+\only<3>{
+\begin{center}
+ \includegraphics[width=1\textwidth]{img/EmployeesManagement_p2.png}
+ % EmployeesManagement_p2.png: 663x738 pixel, 72dpi, 23.39x26.03 cm, bb=0 0 663 738
+\end{center}
+}
+  \column{.47\textwidth}
+  \begin{block}{Employees Management}
+  	Management of employees in terms of hire/fire, bonus, warning and subprocesses to manage branch employees and payrolls	
+  \end{block}
+ \end{columns}
+\end{frame}
+
+\begin{frame}{Business Processes}{Orders and Delivery Management}
+  \begin{columns}
+  \column{.47\textwidth}
+  \only<1>{
+  \begin{center}
+ \includegraphics[height=1\textheight-0.5cm,bb=0 0 603 1149]{img/PonyExpressManagement.png}
+ % PonyExpressManagement.png: 603x1149 pixel, 72dpi, 21.27x40.53 cm, bb=0 0 603 1149
+\end{center}
+}
+\only<2>{
+\begin{center}
+ \includegraphics[width=1\textwidth]{img/PonyExpressManagement_p1.png}
+ % PonyExpressManagement_p1.png: 602x600 pixel, 72dpi, 21.23x21.16 cm, bb=0 0 602 600
+\end{center}
+
+}
+\only<3>{
+\begin{center}
+ \includegraphics[width=1\textwidth]{img/PonyExpressManagement_p2.png}
+ % PonyExpressManagement_p2.png: 602x599 pixel, 72dpi, 21.23x21.13 cm, bb=0 0 602 599
+\end{center}
+
+}
+  \column{.47\textwidth}
+  \begin{block}{Pony Express Management}
+	Describes the Pony express management, pizza home delivery and waiting time.
+	If there are no available pony expresses the Pizz@iolo becomes one of them.   
+  \end{block}
+ \end{columns}
+\end{frame}
+
+\begin{frame}{Business Processes}{Orders and Delivery Management}
+ \begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 1225 384]{img/MakePizza.png}
+ % MakePizza.png: 1225x384 pixel, 72dpi, 43.22x13.55 cm, bb=0 0 1225 384
+\end{center}
+  \begin{block}{Pizza Preparation}
+   Describe the pizza order retrieval and resources used in pizza preparation (oven, pizza press).  
+  \end{block}
+\end{frame}
+
+\begin{frame}{Business Processes}{Store Management}
+  \begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 1371 561]{img/IngredientsManagement.png}
+ % IngredientsManagement.png: 1371x561 pixel, 72dpi, 48.37x19.79 cm, bb=0 0 1371 561
+\end{center}
+  \begin{block}{Ingredients Management}
+    Management of ingredients, from the availability check to the dough production and orders. Moreover, it describes the service of providing material to the retailers.
+  \end{block}
+\end{frame}
+
+%overview dei processi, working environment, qualche processo significativo 
+
+\section{The Information System}
+\begin{frame}{Information System}{Subsystems Overview}
+ The information System must support the main company activities and will be made of the following subsystems:
+ \begin{itemize}
+  \item \textbf{Order System}: handles online (and phone) orders
+  \item \textbf{Accounting System}: keeps track of all the financial 
+  \item \textbf{PDA}: allows the Pony Express to manage home delivery orders, print receipts and exchange data with the accounting system
+  \item \textbf{Store Management System}: manages supply orders and the suppliers list
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Information System}{Order Placement}
+\begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 856 396]{img/CustomerUseCases.png}
+ % CustomerUseCases.png: 856x396 pixel, 72dpi, 30.20x13.97 cm, bb=0 0 856 396
+\end{center}
+\end{frame}
+
+\begin{frame}{Information System}{Order Management}
+\begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 976 506]{img/PizzaioloUseCases.png}
+ % PizzaioloUseCases.png: 976x506 pixel, 72dpi, 34.43x17.85 cm, bb=0 0 976 506
+\end{center}
+\end{frame}
+
+\begin{frame}{Information System}{Store Management}
+\begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 869 506]{img/StoreManager.png}
+ % StoreManager.png: 869x506 pixel, 72dpi, 30.66x17.85 cm, bb=0 0 869 506
+\end{center}
+\end{frame}
+
+\begin{frame}{Information System}{General Direction}
+\begin{center}
+ \includegraphics[width=1\textwidth,bb=0 0 1035 596]{img/GeneralDirection.png}
+ % GeneralDirection.png: 1035x596 pixel, 72dpi, 36.51x21.03 cm, bb=0 0 1035 596
+\end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}[c]
+  \begin{column}{4in}
+   \begin{center}
+    \includegraphics[width=6cm]{img/logos/aticons_redux.png}
+% atingredients_redux.png: 700x375 pixel, 72dpi, 24.69x13.23 cm, bb=0 0 700 375
+    \begin{LARGE}
+     \\Th@nk You!\\
+    \end{LARGE}
+   \end{center}
+  \end{column}
+ \end{columns}
+\end{frame}
+
+
+\end{document}
